@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>50</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>50</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item row="2" column="0">
+     <widget class="QFrame" name="group_Tasks">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="horizontalSpacing">
+        <number>20</number>
+       </property>
+       <item row="1" column="1">
+        <widget class="QListWidget" name="list_HighTasks">
+         <property name="showDropIndicator" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QListWidget" name="list_LowTasks">
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_medium">
+         <property name="text">
+          <string>Medium priority</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QListWidget" name="list_MediumTasks">
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QListWidget" name="list_unCategorized">
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+         </property>
+         <property name="defaultDropAction">
+          <enum>Qt::DropAction::MoveAction</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_high">
+         <property name="text">
+          <string>High priority</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_uncategorized">
+         <property name="text">
+          <string>Uncategorized</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_low">
+         <property name="text">
+          <string>Low priority</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="group_Options">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,6,1,0">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Add your task</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="line_TaskLabelEdit"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cBox_TaskCategoriesEdit">
+         <item>
+          <property name="text">
+           <string>Uncategorized</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Low priority</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Medium Priority</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>High priority</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_TaskAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
